@@ -65,7 +65,7 @@ class BeerControllerTest {
         beerList = new ArrayList<Beer>();
         beerList.add(Beer.builder().build());
         beerList.add(Beer.builder().build());
-        pagedResponse = new PageImpl(beerList);
+        pagedResponse = new PageImpl<>(beerList);
 
         final String id = "493410b3-dd0b-4b78-97bf-289f50f6e74f";
         uuid = UUID.fromString(id);
